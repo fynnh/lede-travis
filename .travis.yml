@@ -5,6 +5,7 @@ compiler: gcc
 install: ./install-dependencies.sh
 
 script:
+- cp .config lede/
 - cd $TRAVIS_BUILD_DIR/lede
 - ./scripts/feeds update
 - ./scripts/feeds install -a
