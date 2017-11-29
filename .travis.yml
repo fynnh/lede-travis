@@ -1,0 +1,2 @@
+sudo: enabled
+install: ./install-dependencies.sh
