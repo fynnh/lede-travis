@@ -16,4 +16,4 @@ script:
 - make -j3 download
 - rm tools/pkg-config/Makefile
 - cp ../Makefile tools/pkg-config/
-- make -j3 tools/install 
+- make -j1 tools/install 

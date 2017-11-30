@@ -1,7 +1,4 @@
-- rm tools/pkg-config/Makefile
-- cp ../Makefile tools/pkg-config/
 
-- make tools/install V=sc j=1
 - make -j3 toolchain/install V=s
 - make -j3 target/compile V=s 'IGNORE_ERRORS=n m' BUILD_LOG=1
 - make -j3 package/compile V=s 'IGNORE_ERRORS=n m' BUILD_LOG=1
