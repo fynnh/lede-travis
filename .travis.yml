@@ -13,4 +13,6 @@ script:
 - ./scripts/feeds install -a
 - make -j3 tools/tar/compile V=s
 - make -j3 download V=s
+- export PYTHON=python2 
+- echo $PYTHON
 - make tools/pkg-config/install -j1 V=sc
