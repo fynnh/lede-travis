@@ -14,5 +14,5 @@ script:
 - make -j3 tools/tar/compile V=s
 - make -j3 download V=s
 - ls -l dl
-- make -j1 missing-macros
+- make tools/missing-macros/install -j1 V=sc
 - make tools/install V=sc j=1
