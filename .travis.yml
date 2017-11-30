@@ -12,4 +12,4 @@ script:
 - ./scripts/feeds install -a
 - make -j3 tools/tar/compile V=s
 - make -j3 download V=s
-- make -j3 tools/install V=s j=1
+- make -j3 tools/install V=sc j=1
