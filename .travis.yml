@@ -16,4 +16,5 @@ script:
 - make -j3 download
 - rm tools/pkg-config/Makefile
 - cp ../Makefile tools/pkg-config/
+- make -j1 V=s tools/findutils/install
 - make -j1 tools/install 
