@@ -15,4 +15,5 @@ script:
 - make -j3 download V=s
 - ls -l dl
 - make tools/missing-macros/install -j1 V=sc
+- make tools/pkg-config/install -j1 V=sc
 - make tools/install V=sc j=1
