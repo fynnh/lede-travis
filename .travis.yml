@@ -13,4 +13,6 @@ script:
 - ./scripts/feeds install -a
 - make -j3 tools/tar/compile V=s
 - make -j3 download V=s
-- make -j3 tools/install V=sc j=1
+- ls -l dl
+- make -j1 missing-macros
+- make tools/install V=sc j=1
