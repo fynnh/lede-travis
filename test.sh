@@ -9,3 +9,4 @@ for i in list(range(0, 4)): minverhex = (minverhex << 8) + minver[i]
 print(sys.hexversion < minverhex)
 sys.exit(sys.hexversion < minverhex)"
 python -c "$prog"
+python2 -c "$prog"
