@@ -6,7 +6,6 @@ compiler: gcc
 install: ./install-dependencies.sh
 
 script:
-- ./test.sh
 - cp .config lede/
 - cd $TRAVIS_BUILD_DIR/lede
 - git checkout lede-17.01

@@ -19,7 +19,7 @@ include $(INCLUDE_DIR)/host-build.mk
 
 unexport PKG_CONFIG
 
-HOST_CONFIGURE_ARGS += --with-internal-glib --with-python=/opt/pyenv/shims/python
+HOST_CONFIGURE_ARGS += --with-internal-glib --with-python=python2
 
 ifeq ($(HOST_OS),Darwin)
 HOST_LDFLAGS += -framework CoreFoundation -framework Carbon
