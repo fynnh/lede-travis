@@ -12,8 +12,8 @@ script:
 - git checkout lede-17.01
 - ./scripts/feeds update
 - ./scripts/feeds install -a
-- make -j3 tools/tar/compile V=s
-- make -j3 download V=s
-- export PYTHON=python2 
-- echo $PYTHON
-- make tools/pkg-config/install -j1 V=sc
+- make -j3 tools/tar/compile
+- make -j3 download
+- rm tools/pkg-config/Makefile
+- cp ../Makefile tools/pkg-config/
+- make -j3 tools/install 
