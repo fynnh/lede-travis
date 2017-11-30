@@ -1,0 +1,7 @@
+- make -j3 tools/install V=s
+- make -j3 toolchain/install V=s
+- make -j3 target/compile V=s 'IGNORE_ERRORS=n m' BUILD_LOG=1
+- make -j3 package/compile V=s 'IGNORE_ERRORS=n m' BUILD_LOG=1
+- make -j3 package/install V=s
+- make -j3 package/index V=s
+- make -j3 target/install V=s
