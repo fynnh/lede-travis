@@ -6,6 +6,7 @@ compiler: gcc
 install: ./install-dependencies.sh
 
 script:
+- which python2
 - ./test.sh
 - cp .config lede/
 - cd $TRAVIS_BUILD_DIR/lede
@@ -16,9 +17,9 @@ script:
 - make -j3 download
 - rm tools/pkg-config/Makefile
 - cp ../pkg-config/Makefile tools/pkg-config/
-
 - rm tools/bison/Makefile
 - cp ../bison/Makefile tools/bison/
-
+- rm tools/findutils/Makefile
+- cp ../findutils/Makefile tools/findutils/
 - make -j1 V=s tools/findutils/install
 - make -j1 tools/install 
