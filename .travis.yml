@@ -7,6 +7,7 @@ install: ./install-dependencies.sh
 
 script:
 - which python2
+- export PYTHON=/opt/pyenv/shims/python2
 - ./test.sh
 - cp .config lede/
 - cd $TRAVIS_BUILD_DIR/lede
