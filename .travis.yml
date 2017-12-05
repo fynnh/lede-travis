@@ -15,6 +15,10 @@ script:
 - make -j3 tools/tar/compile
 - make -j3 download
 - rm tools/pkg-config/Makefile
-- cp ../Makefile tools/pkg-config/
+- cp ../pkg-config/Makefile tools/pkg-config/
+
+- rm tools/bison/Makefile
+- cp ../bison/Makefile tools/bison/
+
 - make -j1 V=s tools/findutils/install
 - make -j1 tools/install 
